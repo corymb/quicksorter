@@ -30,7 +30,7 @@ class ApplicationController < ActionController::Base
   end
 
   def debug
-    # byebug
+    byebug
     @sorted = quicksort_algorithm(@unsorted)
     render 'quicksort'
   end
